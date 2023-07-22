@@ -1,0 +1,57 @@
+.createPostPage{
+  /* 要素を中央に持ってくる */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+
+}
+
+.postContainer {
+  background-color: white;
+  border-radius: 10px; /* 外側に丸みをつける*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* 縦方向にする カラム=列 */
+  height: 400px;
+  width: 500px;
+  gap: 10px;
+  padding: 40px;
+  box-shadow: 0px 1px 23px -10px #a1a267;
+  border-radius: 10px;
+}
+
+.postContainer h2 {
+  margin: 0px;
+}
+
+.postContainer input {
+  padding: 0px;
+  width: 100%;
+  height: 30px;
+  outline: none; /* 選択した時に太線になるのを消せる */
+
+}
+
+.postContainer textarea {
+  width: 100%;
+  height: 200px;
+  outline: none;
+  padding: 4px;
+}
+
+.postButton {
+  padding: 2px;
+  background-color: rgb(191, 255, 112);
+  border: none; /* 外枠の線を消す */
+  border-radius: 4px; /* 外側に丸みをつける */
+  box-shadow: 0px 1px 23px -10px #874b12;
+  transition: all 0.3s; /* ホバーするのに0.3sかける */
+  cursor: pointer; /* リンクを表す指差しポインターが表示される */
+}
+
+.postButton:hover {
+  box-shadow: none; /* ホバーした時に影をなくす */
+  transform: translateY(4px); /* した方向に4px移動した。x軸は右が正 */
+  
+}

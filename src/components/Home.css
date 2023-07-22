@@ -1,0 +1,54 @@
+.homePage {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column; /* 主軸をy軸負の方向に設定 */
+  align-items: center; /* 交差軸を指定 */
+  padding: 25px;
+}
+
+.homePage .postContents {
+  width: 500px;
+  height: auto;
+  background-color: aliceblue;
+  box-shadow: 0px 1px 23px -10px #a1a267;
+  border-radius: 7px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.postHeader h1 {
+  text-align: center; /* 要素を中央に寄せる */
+  margin-top: 5px;
+}
+
+.homePage .postContent {
+  height: auto;
+  word-wrap: break-word; /* 文字のはみ出しを防ぐ */
+  width: 100%;
+}
+
+.nameAndDeleteButton {
+  display: flex;
+  align-items: center;
+}
+
+.nameAndDeleteButton h3 {
+  flex: 90%;
+}
+
+.nameAndDeleteButton button {
+  flex: 10%;
+  background-color: rgba(236, 42, 42, 0.89);
+  border-radius: 4px;
+  border: none; /* 外線をなくす */
+  cursor: pointer; /* カーソルを置いたときにミッキーの手にする */
+  color: white;
+  padding: 6px 7px;
+  transition: all 0.3s; /* 大体0.3sなのかな?? */
+}
+
+.nameAndDeleteButton button:hover {
+  background-color: rgb(228, 21, 21);
+}
+
